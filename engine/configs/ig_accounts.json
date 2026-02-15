@@ -1,0 +1,10 @@
+[
+  {
+    "name": "demo1",
+    "api_key": "<REDACTED>",
+    "username": "<REDACTED>",
+    "password": "<REDACTED>",
+    "account_id": "<REDACTED>",
+    "env": "demo"
+  }
+]

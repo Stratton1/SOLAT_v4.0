@@ -1,0 +1,24 @@
+# SOLAT_v4.0 Cursor Rules
+
+## Core Workflow
+1. Docs-first: update canonical docs before implementation changes.
+2. No silent changes: every code change must be logged in `docs/BUILD_LOG.md` with command + result.
+3. Single source of truth: contracts/schemas/endpoints in `docs/ARCHITECTURE.md` must be updated before code diverges.
+4. Stop points are mandatory: after each major phase, stop and request user approval before continuing.
+
+## Mandatory Canonical Docs
+- `docs/PROJECT_MEMORY.md`
+- `docs/BUILD_LOG.md`
+- `docs/ARCHITECTURE.md`
+- `docs/RUNBOOK.md`
+- `docs/STOP_POINTS.md`
+
+## Change Protocol
+- Before coding: update `PROJECT_MEMORY` and `BUILD_LOG` with intended work.
+- During coding: log each command and material result in `BUILD_LOG`.
+- After coding: update `PROJECT_MEMORY`, `ARCHITECTURE`, and `RUNBOOK` when behavior/contracts changed.
+
+## Safety
+- IG-only scope for broker integrations.
+- No TradingView or lightweight-charts.
+- Do not proceed past a stop point without explicit approval.
