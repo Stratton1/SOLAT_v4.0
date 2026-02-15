@@ -1,6 +1,6 @@
 # SOLAT_v4.0 Project Memory
 
-Last updated: 2026-02-15T04:47:45Z
+Last updated: 2026-02-15T04:48:41Z
 
 ## Scope
 SOLAT_v4.0 is an IG-only local desktop trading platform with:
@@ -32,6 +32,7 @@ SOLAT_v4.0 is an IG-only local desktop trading platform with:
 - Git repository initialized at `/Users/joseph/Projects/SOLAT_ALL/solat_v4.0`.
 - GitHub repository created: `https://github.com/Stratton1/SOLAT_v4.0`.
 - Initial commit pushed to `origin/main` at `d1e65cddb07f47450d764114708c3432d378ab4f`.
+- Latest published commit on `origin/main`: `64bf6e419ef01239875e532d881548b7717ff0a3`.
 - Root governance/tooling files added (`.cursorrules`, `.editorconfig`, `.gitignore`, workspace configs).
 - Canonical docs created and populated with contracts and run instructions.
 - Engine placeholder package and health route scaffolded.
