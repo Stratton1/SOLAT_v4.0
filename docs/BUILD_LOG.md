@@ -384,3 +384,38 @@
 ### Notes
 - GitHub repo creation + commit + push flow completed successfully.
 - Final docs commit/push required to persist this section.
+
+## 2026-02-15T04:50:38Z
+### Commands
+- `gh repo view Stratton1/SOLAT_v4.0 --json name,visibility,url`
+  - Result (sandbox): failed due network restriction.
+- `gh repo view Stratton1/SOLAT_v4.0 --json name,visibility,url` (escalated)
+  - Result: visibility confirmed as `PRIVATE`.
+- `gh repo edit Stratton1/SOLAT_v4.0 --visibility public --accept-visibility-change-consequences`
+  - Result: flag unsupported by installed GH CLI version.
+- `gh repo edit Stratton1/SOLAT_v4.0 --visibility public` (escalated)
+  - Result: visibility change request succeeded.
+- `gh repo view Stratton1/SOLAT_v4.0 --json visibility,url` (escalated)
+  - Result: visibility confirmed as `PUBLIC`.
+- `date -u +"%Y-%m-%dT%H:%M:%SZ"`
+  - Result: captured timestamp `2026-02-15T04:50:38Z`.
+- `apply_patch (docs/PROJECT_MEMORY.md)`
+  - Result: updated state to public repo.
+- `perl -0pi ... docs/ARCHITECTURE.md`
+  - Result: updated timestamp.
+- `perl -0pi ... docs/RUNBOOK.md`
+  - Result: updated timestamp.
+- `perl -0pi ... docs/STOP_POINTS.md`
+  - Result: updated timestamp.
+- `cat >> docs/BUILD_LOG.md <<'EOF' ...`
+  - Result: appended visibility-change log section.
+
+### File Changes
+- Updated `docs/PROJECT_MEMORY.md`
+- Updated `docs/ARCHITECTURE.md`
+- Updated `docs/RUNBOOK.md`
+- Updated `docs/STOP_POINTS.md`
+- Updated `docs/BUILD_LOG.md`
+
+### Notes
+- GitHub repository visibility successfully changed from private to public.
